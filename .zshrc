@@ -78,5 +78,5 @@ export PATH="$HOME/.nest/bin:$PATH"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # This Device Only
-. .zshrc.local
+. $HOME/.zshrc.local
 
