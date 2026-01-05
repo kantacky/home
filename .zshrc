@@ -51,11 +51,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-# Java
-#export JAVA_HOME="$(brew --prefix)/opt/openjdk/libexec/openjdk.jdk/Contents/Home"
-export JAVA_HOME=`/usr/libexec/java_home -v 17`
-export PATH="$JAVA_HOME/bin:$PATH"
-
 # Flutter
 export PATH="$HOME/fvm/default/bin:$PATH"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
