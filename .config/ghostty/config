@@ -1,0 +1,22 @@
+window-padding-balance = true
+window-padding-x = 16
+window-padding-y = 8
+window-theme = ghostty
+
+background-opacity = 0.95
+background-blur-radius = 16
+
+macos-icon = custom-style
+macos-icon-frame = plastic
+macos-titlebar-proxy-icon= hidden
+macos-titlebar-style = transparent
+macos-window-shadow = true
+
+keybind = cmd+r=reload_config
+keybind = cmd+d=new_split:right
+
+theme = GitHub Dark Default
+
+shell-integration = zsh
+
+font-feature = -dlig
