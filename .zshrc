@@ -25,6 +25,9 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 autoload -Uz compinit
 compinit
 
+# Auto Suggestion
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # My Binaries
 export PATH="$HOME/.local/bin:$PATH"
 
