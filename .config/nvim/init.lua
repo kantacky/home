@@ -15,6 +15,7 @@ require("config.lazy")
 
 -- Keymap
 vim.g.mapleader = " "
-vim.keymap.set("n", "<Leader>\\", ":vs<Enter>")
-vim.keymap.set("n", "<Leader>-", ":sp<Enter>")
+vim.keymap.set("n", "<Leader>\\", ":vs<Enter>", { desc = "split window vertically" })
+vim.keymap.set("n", "<Leader>-", ":sp<Enter>", { desc = "split window horizontally" })
+vim.keymap.set("n", "<leader>fe", function() Snacks.explorer() end, { desc = "Snacks Explorer" })
 
