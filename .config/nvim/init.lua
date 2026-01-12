@@ -14,7 +14,7 @@ vim.opt.softtabstop = 4
 require("config.lazy")
 
 -- Keymap
-vim.keymap.set("n", "t", ":NvimTreeToggle<Enter>")
-vim.keymap.set("n", "\\", ":vs<Enter>")
-vim.keymap.set("n", "-", ":sp<Enter>")
+vim.g.mapleader = " "
+vim.keymap.set("n", "<Leader>\\", ":vs<Enter>")
+vim.keymap.set("n", "<Leader>-", ":sp<Enter>")
 
