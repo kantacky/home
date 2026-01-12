@@ -1,7 +1,5 @@
 /*
-
-!.gitignore
-
+!**/.gitignore
 **/.DS_Store
 
 !.zshrc
@@ -9,5 +7,23 @@
 !.p10k.zsh
 
 !.config/
+.config/*
+!.config/emacs/
+!.config/ghostty/
+!.config/tmux/
+!.config/nvim/
+
 !.ssh/
+.ssh/*
+!.ssh/config
+
+!Library/
+Library/*
+!Library/Application\ Support/
+Library/Application\ Support/*
+!Library/Application\ Support/Cursor/
+Library/Application\ Support/Cursor/*
+!Library/Application\ Support/Cursor/User/
+Library/Application\ Support/Cursor/User/*
+!Library/Application\ Support/Cursor/User/settings.json
 
