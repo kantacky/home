@@ -5,6 +5,7 @@
 **/.DS_Store
 
 !.zshrc
+!.zprofile
 !.p10k.zsh
 
 !.config/
