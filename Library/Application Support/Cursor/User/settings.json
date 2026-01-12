@@ -41,12 +41,7 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "files.exclude": {
-    "**/.DS_Store": true,
-    "**/.git": false,
-    "**/.hg": true,
-    "**/.svn": true,
-    "**/CVS": true,
-    "**/Thumbs.db": true
+    "**/.git": false
   },
   "files.insertFinalNewline": true,
   "geminicodeassist.displayInlineContextHint": false,
