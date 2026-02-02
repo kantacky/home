@@ -6,6 +6,8 @@
 !.zprofile
 !.p10k.zsh
 
+!.gitconfig
+
 !.config/
 .config/*
 !.config/emacs/
@@ -31,4 +33,3 @@ Library/Application\ Support/Cursor/*
 !Library/Application\ Support/Cursor/User/
 Library/Application\ Support/Cursor/User/*
 !Library/Application\ Support/Cursor/User/settings.json
-

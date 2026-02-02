@@ -1,0 +1,30 @@
+[user]
+	email = iam@kantacky.com
+	name = Kanta Oikawa
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPabmvzx4PzL8bEeCWLFd7uwtGGTTVd+gqedc2NrGLFz
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
+[push]
+	autoSetupRemote = true
+[init]
+	defaultBranch = main
+[alias]
+    s = status
+    a = add
+    c = commit
+    p = push
+    f = fetch
+    m = merge
+    co = checkout
+    b = branch
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	ignorecase = false
