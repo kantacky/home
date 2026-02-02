@@ -2,34 +2,32 @@
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "editor.rulers": [
-      80
-    ],
+    "editor.rulers": [80],
     "editor.selectionHighlight": false,
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": "off"
+    "editor.wordBasedSuggestions": "off",
   },
   "[go]": {
-    "editor.defaultFormatter": "golang.go"
+    "editor.defaultFormatter": "golang.go",
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[swift]": {
     "editor.indentSize": 4,
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "diffEditor.codeLens": true,
   "editor.accessibilitySupport": "off",
@@ -44,11 +42,13 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "files.exclude": {
-    "**/.git": false
+    "**/.git": false,
   },
   "files.insertFinalNewline": true,
   "git.autofetch": true,
   "workbench.colorTheme": "Default Dark Modern",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "explorer.confirmDragAndDrop": false,
 }
