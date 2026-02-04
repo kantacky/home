@@ -3,7 +3,7 @@ window-padding-x = 16
 window-padding-y = 8
 window-theme = ghostty
 
-background-opacity = 0.95
+background-opacity = 0.75
 background-blur-radius = 16
 
 macos-icon = custom-style
