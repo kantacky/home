@@ -4,10 +4,6 @@
       "command": "docker",
       "args": ["mcp", "gateway", "run"]
     },
-    "apple-docs": {
-      "command": "npx",
-      "args": ["apple-doc-mcp-server@latest"]
-    },
     "figma": {
       "type": "http",
       "url": "https://mcp.figma.com/mcp"
@@ -16,13 +12,15 @@
       "command": "npx",
       "args": ["firebase-tools@latest", "mcp"]
     },
-    "next-devtools": {
-      "command": "npx",
-      "args": ["-y", "next-devtools-mcp@latest"]
-    },
     "notion": {
       "type": "http",
       "url": "https://mcp.notion.com/mcp"
+    },
+    "xcode": {
+      "type": "stdio",
+      "command": "xcrun",
+      "args": ["mcpbridge"],
+      "env": {}
     },
     "zotero": {
       "command": "uvx",
