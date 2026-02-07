@@ -49,3 +49,9 @@ export PATH="$HOME/.nest/bin:$PATH"
 
 # This Device Only
 . $HOME/.zshrc.local
+
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/kantacky/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
