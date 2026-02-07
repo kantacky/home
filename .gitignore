@@ -12,6 +12,7 @@
 .config/*
 !.config/emacs/
 !.config/ghostty/
+!.config/mise/
 !.config/tmux/
 !.config/nvim/
 
