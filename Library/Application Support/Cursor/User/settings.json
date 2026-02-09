@@ -51,5 +51,6 @@
   "workbench.startupEditor": "none",
   "cursor.composer.shouldChimeAfterChatFinishes": true,
   "explorer.confirmDragAndDrop": false,
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "window.commandCenter": true
 }
