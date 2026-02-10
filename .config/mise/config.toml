@@ -4,8 +4,11 @@ idiomatic_version_file_enable_tools = ["ruby"]
 [tools]
 "aqua:go-task/task" = "latest"
 buf = "latest"
+gh = "latest"
 go = "1"
+helm = "latest"
 node = "24"
+pnpm = "latest"
 ruby = "4.0"
 uv = "latest"
 xcbeautify = "latest"
