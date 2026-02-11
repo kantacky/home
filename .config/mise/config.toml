@@ -4,6 +4,7 @@ idiomatic_version_file_enable_tools = ["ruby"]
 [tools]
 "aqua:go-task/task" = "latest"
 buf = "latest"
+"gem:cocoapods" = "latest"
 gh = "latest"
 go = "1"
 helm = "latest"
