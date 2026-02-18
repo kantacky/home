@@ -11,6 +11,7 @@ helm = "latest"
 node = "24"
 pnpm = "latest"
 ruby = "4.0"
+swiftgen = { version = "latest", exe = "swiftgen/bin/swiftgen" }
 uv = "latest"
 xcbeautify = "latest"
 xcodes = "latest"
