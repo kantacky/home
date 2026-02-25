@@ -17,9 +17,6 @@
 !.config/nvim/
 
 !.cursor/
-.cursor/*
-!.cursor/extensions.json
-!.cursor/mcp.json
 
 !.ssh/
 .ssh/*
