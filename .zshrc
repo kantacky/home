@@ -45,7 +45,7 @@ source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 export PATH="$HOME/.nest/bin:$PATH"
 
 # Dart
-export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH="$HOME/.pub-cache/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
