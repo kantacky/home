@@ -8,6 +8,10 @@
 
 !.gitconfig
 
+!.claude/
+.claude/*
+!.claude/commands/
+
 !.config/
 .config/*
 !.config/emacs/
