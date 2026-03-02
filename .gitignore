@@ -20,8 +20,6 @@
 !.config/tmux/
 !.config/nvim/
 
-!.cursor/
-
 !.ssh/
 .ssh/*
 !.ssh/config
