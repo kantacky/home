@@ -34,6 +34,10 @@ export PATH="$HOME/.local/bin:$PATH"
 # mise
 eval "$(mise activate zsh)"
 
+# direnv
+export EDITOR=vim
+eval "$(direnv hook zsh)"
+
 # PostgreSQL
 export PATH="$(brew --prefix)/opt/postgresql@18/bin:$PATH"
 
