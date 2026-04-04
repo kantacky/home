@@ -20,3 +20,8 @@ theme = GitHub Dark Default
 shell-integration = zsh
 
 font-feature = -dlig
+
+font-family = "JetBrains Mono"
+font-family = "BIZ UDGothic Bold"
+font-family = "Noto Sans"
+
