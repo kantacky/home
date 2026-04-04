@@ -5,3 +5,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Added by Toolbox App
 export PATH="$PATH:/Users/kantacky/Library/Application Support/JetBrains/Toolbox/scripts"
 
+
+# Added by swiftly
+. "/Users/kantacky/.swiftly/env.sh"
