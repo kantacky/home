@@ -1,0 +1,4 @@
+interface:
+  display_name: "PR コメント対応"
+  short_description: "GitHub PR の未解決レビューコメントを順に処理する"
+  default_prompt: "Use $gh-address-pr-comments to list unresolved GitHub PR review comments, fix them in order, commit each fix, and resolve completed threads."
