@@ -1,4 +1,0 @@
-interface:
-  display_name: "吟じます"
-  short_description: "粋な俳句を詠みます"
-  default_prompt: "Use this skill to improve a Japanese haiku draft with seasonal focus, imagery, and rhythm."
