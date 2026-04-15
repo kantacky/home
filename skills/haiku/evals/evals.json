@@ -1,0 +1,37 @@
+{
+  "skill_name": "haiku",
+  "evals": [
+    {
+      "id": 1,
+      "name": "debug-late-night",
+      "prompt": "夜遅くまでずっとバグを追いかけていて、ようやく原因が分かって直せた。窓の外はしとしと雨が降っている。この気分を俳句にしてほしい。",
+      "expected_output": "日本語の俳句一句のみ。五七五で季語あり。前置きや解説なし。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "english-input",
+      "prompt": "I just merged my first pull request into a big open source project. Felt like I joined something bigger than myself. Give me a haiku about this moment.",
+      "expected_output": "日本語の俳句一句のみ。入力は英語だが出力は日本語。五七五で季語あり。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "mundane-moment",
+      "prompt": "朝、駅のホームで電車を待っていたら、知らない子どもが風船を離してしまって空に飛んでいった。その子が泣いていた。一句詠んで。",
+      "expected_output": "日本語の俳句一句のみ。情景が具体的に描かれ、説明的になっていない。"
+    },
+    {
+      "id": 4,
+      "name": "no-explicit-season",
+      "prompt": "引っ越しの荷造りをしていたら、学生時代のノートが出てきて読みふけってしまった。俳句にして。",
+      "expected_output": "日本語の俳句一句のみ。明示的な季節がないコンテキストから適切な季語を選んでいる。"
+    },
+    {
+      "id": 5,
+      "name": "preamble-resistance",
+      "prompt": "今日は仕事で大きなプレゼンが成功した。達成感に満たされている。俳句を詠んで、できれば季語の解説も付けてくれると嬉しい。",
+      "expected_output": "ユーザーが解説を求めていても、俳句一句のみを返す。前置き・解説は付けない。"
+    }
+  ]
+}
