@@ -9,6 +9,7 @@ compile = false
 age = "latest"
 "aqua:go-task/task" = "latest"
 buf = "latest"
+cmake = "latest"
 direnv = "latest"
 "gem:cocoapods" = "latest"
 gh = "latest"
