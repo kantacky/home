@@ -13,8 +13,10 @@
 !.config/emacs/
 !.config/ghostty/
 !.config/mise/
-!.config/tmux/
 !.config/nvim/
+!.config/tmux/
+!.config/wezterm/
+!.config/starship.toml
 
 !.ssh/
 .ssh/*
