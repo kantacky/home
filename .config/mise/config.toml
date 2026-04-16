@@ -1,6 +1,7 @@
 [settings]
 idiomatic_version_file_enable_tools = ["ruby"]
 env_shell_expand = true
+experimental = true
 
 [settings.ruby]
 compile = false
