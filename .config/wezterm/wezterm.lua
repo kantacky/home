@@ -7,6 +7,12 @@ config.use_ime = true
 config.window_background_opacity = 0.85
 config.macos_window_background_blur = 20
 
+-- 非アクティブなPaneを暗くしてフォーカス中のPaneを強調表示
+config.inactive_pane_hsb = {
+  saturation = 0.8,
+  brightness = 0.6,
+}
+
 ----------------------------------------------------
 -- Tab
 ----------------------------------------------------
