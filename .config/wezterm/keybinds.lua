@@ -121,7 +121,7 @@ return {
     { key = 'v', mods = 'SHIFT|CTRL', action = act.PasteFrom 'Clipboard' },
     { key = 'v', mods = 'SUPER', action = act.PasteFrom 'Clipboard' },
     { key = 'w', mods = 'SHIFT|CTRL', action = act.CloseCurrentTab{ confirm = true } },
-    { key = 'w', mods = 'SUPER', action = act.CloseCurrentTab{ confirm = true } },
+    { key = 'w', mods = 'SUPER', action = act.CloseCurrentPane{ confirm = true } },
     { key = 'x', mods = 'SHIFT|CTRL', action = act.ActivateCopyMode },
     { key = 'z', mods = 'SHIFT|CTRL', action = act.TogglePaneZoomState },
     { key = '{', mods = 'SUPER', action = act.ActivateTabRelative(-1) },
