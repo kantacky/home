@@ -145,6 +145,7 @@ return {
     { key = 'DownArrow', mods = 'SHIFT|ALT|CTRL', action = act.AdjustPaneSize{ 'Down', 1 } },
     { key = '\\', mods = 'LEADER', action = act.SplitHorizontal{ domain = 'CurrentPaneDomain' } },
     { key = '-', mods = 'LEADER', action = act.SplitVertical{ domain = 'CurrentPaneDomain' } },
+    { key = 'Backspace', mods = 'SUPER', action = act.SendKey{ key = 'u', mods = 'CTRL' } },
     { key = 'Copy', mods = 'NONE', action = act.CopyTo 'Clipboard' },
     { key = 'Paste', mods = 'NONE', action = act.PasteFrom 'Clipboard' },
   },
