@@ -1,0 +1,78 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "edit_predictions": {
+    "provider": "copilot",
+    "ollama": {
+      "model": "gemma4:latest",
+    },
+  },
+  "base_keymap": "VSCode",
+  "minimap": {
+    "show": "never",
+  },
+  "format_on_save": "on",
+  "auto_indent_on_paste": true,
+  "remove_trailing_whitespace_on_save": true,
+  "show_whitespaces": "all",
+  "use_on_type_format": true,
+  "show_edit_predictions": true,
+  "ensure_final_newline_on_save": true,
+  "soft_wrap": "editor_width",
+  "hard_tabs": false,
+  "tab_size": 2,
+  "agent_servers": {
+    "github-copilot-cli": {
+      "type": "registry",
+    },
+    "codex-acp": {
+      "type": "registry",
+    },
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+  "languages": {
+    "Swift": {
+      "tab_size": 4,
+    },
+  },
+  "lsp": {
+    "dart": {
+      "binary": {
+        "path": "/Users/kantacky/.local/share/mise/installs/dart/3/bin/dart",
+        "arguments": ["language-server", "--protocol=lsp"],
+      },
+      "settings": {
+        "lineLength": 80,
+      },
+    },
+    "kotlin-language-server": {
+      "settings": {
+        "compiler": {
+          "jvm": {
+            "target": "17",
+          },
+        },
+      },
+      "binary": {
+        "env": {
+          "JAVA_HOME": "/Users/kantacky/Applications/Android Studio.app/Contents/jbr/Contents/Home",
+        },
+      },
+    },
+  },
+}

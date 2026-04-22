@@ -16,6 +16,9 @@
 !.config/nvim/
 !.config/tmux/
 !.config/wezterm/
+!.config/zed/
+.config/zed/*
+!.config/zed/settings.json
 !.config/starship.toml
 
 !.ssh/
