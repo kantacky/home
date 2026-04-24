@@ -75,6 +75,41 @@ query {
 
 取得後は `isResolved == false` のものだけに絞ります。
 
+**注意: ページネーション必須**
+
+`reviewThreads(first: 100)` は 1 ページあたり最大 100 件しか返しません。大きな PR ではこれを超えるため、必ず `totalCount` と `pageInfo { hasNextPage endCursor }` を取得して残りを取りきること。`first: 100` だけで判断すると「未解決 0 件」と誤認します。
+
+```bash
+# まず totalCount / pageInfo を確認
+gh api graphql -f query='
+query {
+  repository(owner: "OWNER", name: "REPO") {
+    pullRequest(number: PR_NUMBER) {
+      reviewThreads(first: 100) {
+        totalCount
+        pageInfo { hasNextPage endCursor }
+        nodes { id isResolved }
+      }
+    }
+  }
+}'
+
+# hasNextPage が true なら endCursor を after に渡して続きを取る
+gh api graphql -f query='
+query($cursor: String) {
+  repository(owner: "OWNER", name: "REPO") {
+    pullRequest(number: PR_NUMBER) {
+      reviewThreads(first: 100, after: $cursor) {
+        pageInfo { hasNextPage endCursor }
+        nodes { id isResolved path line comments(first: 3) { nodes { body url } } }
+      }
+    }
+  }
+}' -f cursor="END_CURSOR"
+```
+
+`hasNextPage` が false になるまで繰り返し、全スレッドを集約してから未解決を抽出します。§8 の最終確認クエリも同様にページネーションすること。
+
 ユーザー向け一覧には以下を含めます。
 
 - コメント本文から読める severity (`MUST`, `SHOULD`, `NITS`)
@@ -190,6 +225,7 @@ query {
 ## ガードレール
 
 - 壊れやすいスクレイピングより `gh api graphql` を優先する
+- `reviewThreads(first: 100)` の 1 ページ上限に注意し、`totalCount` / `pageInfo` を必ず確認して最終ページまで取り切る
 - `gh` がネットワークやサンドボックス制限で失敗したら、必要な承認を取って再試行する
 - git 操作は直列で進める。`git add` と `git commit` を並列実行しない
 - `index.lock` 競合が出たら、lock の状態を確認してから再試行する
