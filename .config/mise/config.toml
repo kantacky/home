@@ -23,6 +23,7 @@ pnpm = "latest"
 ruby = "4.0"
 sops = "latest"
 swiftgen = { version = "latest", exe = "swiftgen/bin/swiftgen" }
+terraform = "latest"
 uv = "latest"
 xcbeautify = "latest"
 xcodes = "latest"
